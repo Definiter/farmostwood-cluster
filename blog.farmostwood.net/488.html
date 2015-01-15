@@ -1,0 +1,449 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--<title>木遥的窗子  &raquo; Blog Archive   &raquo; P vs. NP，我们从过去的一周中学到了什么？</title>-->
+<title>P vs. NP，我们从过去的一周中学到了什么？ &laquo;  木遥的窗子</title>
+<meta name="generator" content="WordPress 3.8.3" /> <!-- leave this for stats -->
+<link rel="stylesheet" href="http://blog.farmostwood.net/wp-content/themes/relaxation_ttftitle/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="feed.rss" />
+<link rel="alternate" type="text/xml" title="RSS .92" href="http://blog.farmostwood.net/feed/rss" />
+<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://blog.farmostwood.net/feed/atom" />
+<link rel="pingback" href="xmlrpc.php" />
+
+
+
+<link rel="alternate" type="application/rss+xml" title="木遥的窗子 &raquo; P vs. NP，我们从过去的一周中学到了什么？ Comments Feed" href="http://blog.farmostwood.net/488.html/feed" />
+<link rel='stylesheet' id='jetpack-subscriptions-css'  href='http://blog.farmostwood.net/wp-content/plugins/jetpack/modules/subscriptions/subscriptions.css?ver=3.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack-widgets-css'  href='http://blog.farmostwood.net/wp-content/plugins/jetpack/modules/widgets/widgets.css?ver=20121003' type='text/css' media='all' />
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/prototype/1.7.1.0/prototype.js?ver=1.7.1'></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js?ver=1.9.0'></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/effects.js?ver=1.9.0'></script>
+<script type='text/javascript' src='http://blog.farmostwood.net/wp-content/plugins/lightbox-2/lightbox-resize.js?ver=1.8'></script>
+<script type='text/javascript' src='http://blog.farmostwood.net/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://blog.farmostwood.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php-rsd.xml" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.farmostwood.net/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='失语的夏天' href='487.html' />
+<link rel='next' title='暮云' href='489.html' />
+<meta name="generator" content="WordPress 3.8.3" />
+<link rel='canonical' href='488.html' />
+<link rel='shortlink' href='http://wp.me/p4G7A-7S' />
+<script type="text/javascript" src="http://blog.farmostwood.net/wp-content/plugins/audio-player/assets/audio-player.js?ver=2.0.4.6"></script>
+<script type="text/javascript">AudioPlayer.setup("http://blog.farmostwood.net/wp-content/plugins/audio-player/assets/player.swf?ver=2.0.4.6", {width:"290",animation:"yes",encode:"yes",initialvolume:"60",remaining:"no",noinfo:"no",buffer:"5",checkpolicy:"no",rtl:"no",bg:"f8f8f8",text:"666666",leftbg:"eeeeee",lefticon:"666666",volslider:"666666",voltrack:"FFFFFF",rightbg:"cccccc",rightbghover:"999999",righticon:"666666",righticonhover:"ffffff",track:"FFFFFF",loader:"dddddd",border:"666666",tracker:"DDDDDD",skip:"666666",pagebg:"FFFFFF",transparentpagebg:"yes"});</script>
+<script type="text/javascript" src="http://blog.farmostwood.net/wp-content/plugins/flash-video-player/swfobject.js"></script>
+
+	<!-- begin lightbox scripts -->
+	<script type="text/javascript">
+    //<![CDATA[
+    document.write('<link rel="stylesheet" href="http://blog.farmostwood.net/wp-content/plugins/lightbox-2/Themes/Black/lightbox.css" type="text/css" media="screen" />');
+    //]]>
+    </script>
+	<!-- end lightbox scripts -->
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="P vs. NP，我们从过去的一周中学到了什么？" />
+<meta property="og:url" content="http://blog.farmostwood.net/488.html" />
+<meta property="og:description" content="这篇文章的标题是模仿 Suresh Venkatasubramanian 的一篇博客文章。他是犹他大学的一名计算机系助理教授。在过去的一周里，他在自己的博客上连续发表了好几篇文章，讨论 Vinay Deolalikar 在 8 月 6 号公布在网络上，后来又几经修改的那篇备受争议的宣称证明了 P ≠ NP 的论文。 他不是唯一一个这样做的科学家。在过去的一周里，以博客为平台参与到关于这篇论文..." />
+<meta property="article:published_time" content="2010-08-16T09:30:13+00:00" />
+<meta property="article:modified_time" content="2010-08-16T09:31:39+00:00" />
+<meta property="article:author" content="http://blog.farmostwood.net/author/farmostwood" />
+<meta property="og:site_name" content="木遥的窗子" />
+<meta property="og:image" content="http://wordpress.com/i/blank.jpg" />
+<meta name="twitter:site" content="@jetpack" />
+<meta name="twitter:card" content="summary" />
+</head>
+<body>
+<div id="page">
+<div id="top"></div>
+<div id="wrapper">
+<div id="header">
+<!--<a style="color: #a9ac99; font: 30px Georgia, 'Times New Roman', Times, serif;" href="http://blog.farmostwood.net" title="木遥的窗子">木遥的窗子</a>-->
+<a href="index.html"><img src="http://blog.farmostwood.net/wp-content/themes/relaxation_ttftitle/images/feather.png" alt="木遥的窗子" title="木遥的窗子" height="100"  /></a> 
+</div><div id="content">
+<div class="post">
+<!--<h1 id="post-488"><a href="http://blog.farmostwood.net/488.html" rel="bookmark" title="Permanent Link: P vs. NP，我们从过去的一周中学到了什么？">P vs. NP，我们从过去的一周中学到了什么？</a></h1>-->
+<h1 id="post-488"><a href="488.html" rel="bookmark" title="Permanent Link: P vs. NP，我们从过去的一周中学到了什么？"><img class="ttf" src="http://blog.farmostwood.net/wp-content/plugins/ttftitles/cache/f9aacd2584a3cb892018f48a52a43508.png" alt="P vs. NP，我们从过去的一周中学到了什么？" width="318" height="21" /></a></h1>
+<div class="entrytext">
+<p>这篇文章的标题是模仿 Suresh Venkatasubramanian 的一篇<a href="http://geomblog.blogspot.com/2010/08/p-vs-np-what-ive-learnt-so-far.html" target="_blank">博客文章</a>。他是犹他大学的一名计算机系助理教授。在过去的一周里，他在自己的博客上连续发表了好几篇文章，讨论 Vinay Deolalikar 在 8 月 6 号公布在网络上，后来又几经修改的那篇备受争议的宣称证明了 P ≠ NP 的论文。</p>
+<p>他不是唯一一个这样做的科学家。在过去的一周里，以博客为平台参与到关于这篇论文的大讨论的，还包括（并且远远不限于）下面这些名字：Richard Lipton，Timothy Gowers，Neil Immerman，Russel Impagliazzo，Harvey Friedman，以及陶哲轩。这些人全部都是世界级的顶尖科学家，通常情况下，即使在国际学术会议上也未必能够看到他们同时出现。而这一次他们以博客（主要是 Lipton 的博客和评论）和 wiki 为平台，展开了比通常在学术会议上更为激烈的讨论乃至辩论。其主题涵盖了从 Deolalikar 证明的有效性，到对 P/NP 问题更为一般的分析，乃至抽象的学术方法论等等各个层面。这讨论直至今日为止，仍在进行。上千条发言大多洋洋洒洒，众人讨论态度之谦冲和平，内容之深入细致，足堪为网络时代的一个完美的表率。阅读这些讨论是令人深受教益的过程，无论是在学术上还是在更抽象的层面上都是如此。</p>
+<p>随着整个故事的尘埃渐渐落定，现在已经可以回头看看，在过去这脚步匆促的一周里围绕着 Deolalikar 的这篇论文发生了哪些事情。下面提到的人物均为学术界内的重要科学家，其身份不一一注明。</p>
+<ul>
+<li>8 月 6 日，Deolalikar 在<a href="http://www.hpl.hp.com/personal/Vinay_Deolalikar/" target="_blank">网络</a>上张贴了自己的论文初稿。</li>
+<li>8 月 8 日，Lipton 在<a href="http://rjlipton.wordpress.com/2010/08/08/a-proof-that-p-is-not-equal-to-np/" target="_blank">博客</a>上讨论了这篇论文，给出了略显乐观的评价：这是一个值得认真对待的证明。这篇文章引来大量严肃的学术性回复，大多来自业内人士，各方看法不一。</li>
+<li>8 月 9 日，Lipton 在参考各方反应的基础上同 Ken Regan 合写了一篇新的<a href="http://rjlipton.wordpress.com/2010/08/09/issues-in-the-proof-that-p%e2%89%a0np/" target="_blank">博客文章</a>，指出了 Deolalikar 证明思路中的一些重大漏洞，对它的整体评价口吻较前日明显低调了许多。</li>
+<li>同日，因为 Lipton 博客文章后面大量有价值的评论值得梳理，Venkatasubramanian 建立了一个可以被公众编辑的 Google Docs 文档以整理这些讨论。翌日，在陶哲轩的帮助下，该文档被转换成一个 <a href="http://michaelnielsen.org/polymath1/index.php?title=Deolalikar's_P!%3DNP_paper" target="_blank">wiki 架构的页面</a>。</li>
+<li>8 月 10 日，Lipton 写了新的<a href="http://rjlipton.wordpress.com/2010/08/10/update-on-deolalikars-proof-that-p%E2%89%A0np/" target="_blank">博客文章</a>，试图将各方讨论的结果以更清晰的方式呈现出来。这篇文章继续成为各方讨论的平台，更多学术上的批评开始浮出水面。更多科学家参与了博客评论以及 wiki 页面的编辑。同日，Deolalikar 在自己的网站上撤下了论文初稿的链接，稍后放上了新一稿。</li>
+<li>8 月 11 日，Lipton <a href="http://rjlipton.wordpress.com/2010/08/11/deolalikar-responds-to-issues-about-his-p%e2%89%a0np-proof/" target="_blank">贴出</a>了 Deolalikar 对一部分学术质疑的答复。Deolalikar 贴出了论文的第三稿。</li>
+<li>同一日，在学术讨论之外，各方对事态发展的速度和形式本身开始进行反思。Lipton 和陶哲轩等人认为一个借助互联网平台被良好组织起来的讨论可以产生很好的效果，无论对于 Deolalikar 改进他的证明还是对于推进人们关于 P/NP 问题本身的了解都有益处。而另一些科学家，以 Impagliazzo 为代表，认为网络讨论导致了人们反应过度，浪费了太多本可以从事其它研究的时间。这一论点引起了大量争论。</li>
+<li>8 月 12 日，Lipton <a href="http://rjlipton.wordpress.com/2010/08/12/fatal-flaws-in-deolalikars-proof" target="_blank">贴出</a>了一封来自 Neil Immerman 的信，指出了两个此前未被认真讨论的漏洞。</li>
+<li>8 月 13 日，Deolalikar 贴出了一篇关于自己的证明的解释性文档。</li>
+<li>8 月 14 日，在很多科学家的共同讨论中，人们逐渐厘清 Deolalikar 的论文的根本问题在于把两个没有在论文中被严格定义出来的直观概念混淆在一起，从而做出了不完善的论证。</li>
+<li>8 月 15 日，Lipton <a href="http://rjlipton.wordpress.com/2010/08/15/the-p%e2%89%a0np-proof-is-one-week-old/">贴出</a>了他对于一周以来讨论的总结。人们关于论文的看法——即证明不能成立——已经趋于稳定（当然这不能排除大家都同时犯了错误的可能性），随后的发言越来越多地集中于更抽象的层面，并且至今仍在继续。</li>
+</ul>
+<p>这是极为罕见的一幕。也许甚至可以说，这是有史以来科学界从未发生过的一幕。仅仅十年前，科学家之间的通信和面对面的交谈还几乎是科学交流仅有的方式。虽然人们一般会用「日新月异」形容科技发展的速度，但是科学研究方式本身的变迁则要缓慢许多。而这一点似乎一夜之间就改变了。</p>
+<p>一个自然而然浮现出的问题是，在后 web 2.0 时代，传统的论文匿名评审制度会面临怎样的挑战？Deolalikar 声称他仍然会把自己的论文按照传统的方式投递给学术刊物，可是任何一个学术刊物的评审显然都不可能无视在网络上业已出现的讨论。这些讨论对传统的评审机制是一种补充，还是一种颠覆？正如 Friedman 在<a href="http://rjlipton.wordpress.com/2010/08/15/the-p%e2%89%a0np-proof-is-one-week-old/#comment-5635" target="_blank">评论</a>中所指出的，在未来，也许网络会替代学术期刊成为人们发表学术成果的主要方式，而基于网络互动的评审机制会被建立起来。这会很快成为现实么？</p>
+<p>在更高的层面上，这个案例还生动地展示出，一个社会化的网络会在多大程度上改变人们的工作——而非仅仅是社交或者游戏——方式，以及这种改变是多么具有争议性。下面的争论也许可以很好反映出人们的分歧。它始自 Impagliazzo 的一则<a href="http://rjlipton.wordpress.com/2010/08/10/update-on-deolalikars-proof-that-p%e2%89%a0np/#comment-4815" target="_blank">评论</a>：</p>
+<blockquote><p><span style="color: #808000;">像陶哲轩和 Gowers 这样的人在这几天功夫里本来可以做很多事的，所以如果（这篇论文被发现）此路不通，那这几天浪费得实在是有点可耻。</span></p></blockquote>
+<p>陶哲轩本人温和地<a href="http://rjlipton.wordpress.com/2010/08/10/update-on-deolalikars-proof-that-p%e2%89%a0np/#comment-4959" target="_blank">反驳</a>了这一批评：</p>
+<blockquote><p><span style="color: #808000;">我想这段时间以来，我们在一起专注于这个讨论，这比每个人都听说这个消息然后所有的专家们都各自花时间读整篇文章要有效率一些。这个办法实际上降低了总时间消耗，尽管它的消耗是在明处。</span></p></blockquote>
+<p>这一争论很像是人们习以为常的关于社会化网络的批评在一个特殊场合下的翻版：对它的批评集中于它浪费参与者的时间，分散人们的注意力，使他们不能更有效率地做本职工作。而它的辩护者则认为它促进了信息的交换，提高了人们思考和分析问题的效率，等等。</p>
+<p>但是更进一步，基于博客和 wiki 的社会化网络能不能做到更多呢？陶哲轩在另一则<a href="http://rjlipton.wordpress.com/2010/08/10/update-on-deolalikars-proof-that-p%e2%89%a0np/#comment-4905" target="_blank">评论</a>里不无担忧地说：</p>
+<blockquote><p><span style="color: #808000;">如果这些讨论的全部意义仅仅在于审阅这篇论文，那我实际上很同意 Impagliazzo （关于浪费时间）的观点。我其实觉得，既然我们都在这里，我们有机会做更多的事情，不仅仅是审阅而已。</span></p></blockquote>
+<p>他的担忧在某种意义上被证实了：在过去的一周时间的热烈而深入的讨论中，人们以史无前例的速度分析并否定了这篇冗长（100 页）而专业的论文，但是也仅此而已。很多人从中学到了不少东西，对很多问题的理解更为深刻，但是并没有任何新的成就诞生出来。（如果有的话，这个故事会显得戏剧性许多。）</p>
+<p>这正是从 Twitter 到 Facebook 再到 Quora 等等的网络平台都在面临着的问题。借助它们，人们可以更好的交流信息，但是如何在社会化的基础上更好地创造出新的知识呢？工业化的历史已经证明，一群人可以创造出超出它的所有成员能力范围之外的物质成果。但是在精神文明的领域里，事情似乎远不是这么简单。</p>
+<p>David Dill 在 1999 年曾经说过：Don’t rely on social processes for verification （社会化的审查过程是靠不住的）。在过去的一周里，人们看到了这句话在某种意义上的一个反例。如果把这句话中的 verification 换成 creation 呢？这有点像是一个我们这个时代的，关于巴别塔的问题。</p>
+<p class="postmetadata alt">
+<small>
+This entry was posted on Monday, August 16th, 2010 at 5:30pm 
+and is filed under <a href="http://blog.farmostwood.net/category/technology" title="View all posts in Technology" rel="category tag">Technology</a>.
+You can follow any responses to this entry through the <a href='http://blog.farmostwood.net/488.html/feed'>RSS 2.0</a> feed. 
+You can <a href="488.html#respond">leave a response</a> or <a href="http://blog.farmostwood.net/488.html/trackback">trackback</a> from your own site. 
+</small>
+</p>
+</div>
+</div>
+<!-- You can start editing here. -->
+<h3 id="comments">12 Responses to &#8220;P vs. NP，我们从过去的一周中学到了什么？&#8221;</h3> 
+<ol class="commentlist">
+<li class="commentbody" id="comment-4180">
+<a href='http://justsven.net' rel='external nofollow' class='url'>SWX</a><br />
+<a class="commentlink" href="488.html#comment-4180" title="">August 16th, 2010 18:48</a> <div class="commentcount">1</div>
+<p>我有点纳闷的是，难道数学家们的时间是如此宝贵，难道必须以天数来计算，以至于连几天的讨论都浪费不起么？</p>
+</li>
+<li class="commentbody" id="comment-4182">
+0.618<br />
+<a class="commentlink" href="488.html#comment-4182" title="">August 16th, 2010 19:12</a> <div class="commentcount">2</div>
+<p>这文章发得太及时了！我要在点评里借鉴一下～p.s.你认识轩轩么？</p>
+</li>
+<li class="commentbody" id="comment-4183">
+验证码<br />
+<a class="commentlink" href="488.html#comment-4183" title="">August 16th, 2010 19:21</a> <div class="commentcount">3</div>
+<p>根据李淼老师的介绍，物理学家之间利用博客论坛等工具进行讨论交流已经不是一年两年了。“这是极为罕见的一幕。”这话可能只适合用在数学领域。</p>
+</li>
+<li class="commentbody" id="comment-4184">
+polly<br />
+<a class="commentlink" href="488.html#comment-4184" title="">August 16th, 2010 19:39</a> <div class="commentcount">4</div>
+<p>其实很多领域都有mailing list的。不见得很多大牛都是blogger, 可是如果你也加到mailing list里面会经常看到有趣的争论，争到后来大牛都跑出来压场了。哈哈</p>
+</li>
+<li class="commentbody" id="comment-4185">
+polly<br />
+<a class="commentlink" href="488.html#comment-4185" title="">August 16th, 2010 19:43</a> <div class="commentcount">5</div>
+<p>但显然，争论归争论。算publications的话还得老老实实发paper</p>
+</li>
+<li class="commentbody" id="comment-4186">
+木遥<br />
+<a class="commentlink" href="488.html#comment-4186" title="">August 16th, 2010 22:03</a> <div class="commentcount">6</div>
+<p>@验证码</p>
+<p>数学家用博客讨论问题也已经很多年了。我这里说的极为罕见，是指对一篇引起极大关注的论文利用博客进行公开审阅和辩论。</p>
+</li>
+<li class="commentbody" id="comment-4187">
+木遥<br />
+<a class="commentlink" href="488.html#comment-4187" title="">August 16th, 2010 22:05</a> <div class="commentcount">7</div>
+<p>@swx</p>
+<p>这是个机会成本的问题。。。</p>
+</li>
+<li class="commentbody" id="comment-4188">
+lotos.sg<br />
+<a class="commentlink" href="488.html#comment-4188" title="">August 17th, 2010 01:16</a> <div class="commentcount">8</div>
+<p>很有眼光，很有意思！我是外行，所幸你对整个过程的描述很完整清晰，足以帮助外行了解这个过程。这确实有可能成为一个触发点，也可能只是一个个案，要看以后的人如何从中学习。</p>
+<p>这一事件的意义，肯定不能简单地以讨论了一篇后来发现是此路不通的文章来判断。浪费时间的指责过于苛刻。公开网络平台上的深层次沟通讨论，也许可以将互联网从浅阅读、浅批评的层面，带入更高级的层面。拭目以待。</p>
+<p>陶哲轩体现出了很大的开放性，回应有大家风范。从你的描述中看，他在推动讨论的过程中其了很关键的作用。可以想象，类似讨论需要有这样的大牛压阵，才能保持较好的方向。</p>
+</li>
+<li class="commentbody" id="comment-4192">
+dt<br />
+<a class="commentlink" href="488.html#comment-4192" title="">August 18th, 2010 12:37</a> <div class="commentcount">9</div>
+<p>这个讨论是有划时代意义了，但目前仅限于某几个学科。</p>
+</li>
+<li class="commentbody" id="comment-4195">
+Leos<br />
+<a class="commentlink" href="488.html#comment-4195" title="">August 19th, 2010 16:11</a> <div class="commentcount">10</div>
+<p>杂志发表论文制度，是不是可以走进棺材了？</p>
+</li>
+<li class="commentbody" id="comment-4197">
+<a href='http://www.elly66.com' rel='external nofollow' class='url'>Elly66</a><br />
+<a class="commentlink" href="488.html#comment-4197" title="">August 20th, 2010 11:11</a> <div class="commentcount">11</div>
+<p>感觉我们离大师们的物理距离正在缩短。我们能够轻而易举地看到这样一场学术辩论，是web2.0时代给予我们的。</p>
+</li>
+<li class="commentbody" id="comment-4221">
+钢盅郭子<br />
+<a class="commentlink" href="488.html#comment-4221" title="">September 1st, 2010 12:49</a> <div class="commentcount">12</div>
+<p>Web的意义在于，精英掌握话语权的时代已经结束。让更多的人加入到原本只有少数人才能参与的交流中来，人类的智慧也会因此而得以提升</p>
+</li>
+</ol>
+<h3 id="respond">Leave a Reply</h3>
+<form action="http://blog.farmostwood.net/wp-comments-post.php" method="post" id="commentform">
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author"><small>Name (required)</small></label></p>
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+<label for="email"><small>Mail (will not be published) (required)</small></label></p>
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Website</small></label></p>
+<!--<p><small><strong>XHTML:</strong> You can use these tags: &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </small></p>-->
+<p><textarea name="comment" id="comment" cols="50" rows="10" tabindex="4"></textarea></p>
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit" />
+<input type="hidden" name="comment_post_ID" value="488" />
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="7897349f5c" /></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_comments" id="subscribe_comments" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-label" for="subscribe_comments">Notify me of follow-up comments by email.</label></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">Notify me of new posts by email.</label></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="156"/></p></form>
+<div class="navigation">
+<div class="alignleft">&laquo; <a href="487.html">失语的夏天</a></div>
+<div class="alignright"> <a href="489.html">暮云</a> &raquo;</div>
+</div>
+</div>
+</div>
+﻿<div id="sidebar">
+<div id="noindent">
+<ul>
+
+<li>
+<h2>Search</h2>
+<form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+</div>
+</form></li>
+
+
+<li>
+<h2>About Me</h2>
+<ul>
+<li><a href="about.html">关于我。</a></li>
+<li><a href="http://imaginary.farmostwood.net">数学。</a></li>
+<li><a href="http://fiction.farmostwood.net">小说。</a></li>
+<li><a href="sitemap.html">本站目录。</a></li>
+</ul>
+</li>
+
+
+<li>
+<h2>Current Music</h2>
+<ul>
+<li><object type="application/x-shockwave-flash" data="multimedia/player.swf" width="160" height="24" id="audioplayer1"><param name="movie" value="http://blog.farmostwood.net/wp-content/plugins/audio-player/player.swf" /><param name="FlashVars" value="playerID=1&amp;bg=0xf8f8f8&amp;leftbg=0xeeeeee&amp;lefticon=0x666666&amp;rightbg=0xcccccc&amp;rightbghover=0x999999&amp;righticon=0x666666&amp;righticonhover=0xffffff&amp;text=0x666666&amp;slider=0x666666&amp;track=0xFFFFFF&amp;border=0x666666&amp;loader=0xdddddd&amp;soundFile=http%3A%2F%2Fblog.farmostwood.net%2Fmultimedia%2FSidebar%2FHace_Tuto_Guagua-Familion
+.mp3" /><param name="quality" value="high" /><param name="menu" value="false" /><param name="wmode" value="transparent"/></object></li>
+<li>Hace Tuto Guagua</li>
+<li>Performer: Familion</li>
+</ul>
+</li>
+
+<li>
+<h2>Categories</h2>
+<ul>
+	<li class="cat-item cat-item-93"><a href="http://blog.farmostwood.net/category/article" title="View all posts filed under Article">Article</a> (23)
+</li>
+	<li class="cat-item cat-item-5"><a href="http://blog.farmostwood.net/category/diary" title="View all posts filed under Diary">Diary</a> (160)
+</li>
+	<li class="cat-item cat-item-120"><a href="http://blog.farmostwood.net/category/fiction" title="View all posts filed under Fiction">Fiction</a> (5)
+</li>
+	<li class="cat-item cat-item-10"><a href="http://blog.farmostwood.net/category/movie" title="View all posts filed under Movie">Movie</a> (25)
+</li>
+	<li class="cat-item cat-item-3"><a href="http://blog.farmostwood.net/category/music" title="View all posts filed under Music">Music</a> (19)
+</li>
+	<li class="cat-item cat-item-121"><a href="http://blog.farmostwood.net/category/photo" title="View all posts filed under Photo">Photo</a> (46)
+</li>
+	<li class="cat-item cat-item-11"><a href="http://blog.farmostwood.net/category/reading" title="View all posts filed under Reading">Reading</a> (20)
+</li>
+	<li class="cat-item cat-item-118"><a href="http://blog.farmostwood.net/category/research" title="View all posts filed under Research">Research</a> (5)
+</li>
+	<li class="cat-item cat-item-110"><a href="http://blog.farmostwood.net/category/technology" title="View all posts filed under Technology">Technology</a> (29)
+</li>
+	<li class="cat-item cat-item-117"><a href="http://blog.farmostwood.net/category/travel" title="View all posts filed under Travel">Travel</a> (36)
+</li>
+</ul>
+</li>
+
+<li>
+<h2>Archive</h2>
+<ul>
+<select name=\"archive-dropdown\" onChange='document.location.href=this.options[this.selectedIndex].value;'> 
+  <option value=\"\">Select Month</option> 
+  	<option value='http://blog.farmostwood.net/date/2014/07'> July 2014 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2014/06'> June 2014 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2014/05'> May 2014 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2014/04'> April 2014 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2014/02'> February 2014 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2013/11'> November 2013 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2013/08'> August 2013 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2013/07'> July 2013 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2013/05'> May 2013 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2013/04'> April 2013 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2013/03'> March 2013 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2013/02'> February 2013 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2013/01'> January 2013 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2012/12'> December 2012 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2012/11'> November 2012 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2012/09'> September 2012 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2012/08'> August 2012 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2012/07'> July 2012 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2012/06'> June 2012 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2012/03'> March 2012 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2012/01'> January 2012 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2011/12'> December 2011 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2011/11'> November 2011 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2011/10'> October 2011 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2011/09'> September 2011 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2011/08'> August 2011 &nbsp;(10)</option>
+	<option value='http://blog.farmostwood.net/date/2011/07'> July 2011 &nbsp;(5)</option>
+	<option value='http://blog.farmostwood.net/date/2011/06'> June 2011 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2011/05'> May 2011 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2011/04'> April 2011 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2011/03'> March 2011 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2011/02'> February 2011 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2011/01'> January 2011 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2010/12'> December 2010 &nbsp;(8)</option>
+	<option value='http://blog.farmostwood.net/date/2010/11'> November 2010 &nbsp;(5)</option>
+	<option value='http://blog.farmostwood.net/date/2010/10'> October 2010 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2010/09'> September 2010 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2010/08'> August 2010 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2010/07'> July 2010 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2010/06'> June 2010 &nbsp;(6)</option>
+	<option value='http://blog.farmostwood.net/date/2010/05'> May 2010 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2010/04'> April 2010 &nbsp;(11)</option>
+	<option value='http://blog.farmostwood.net/date/2010/03'> March 2010 &nbsp;(6)</option>
+	<option value='http://blog.farmostwood.net/date/2010/02'> February 2010 &nbsp;(5)</option>
+	<option value='http://blog.farmostwood.net/date/2010/01'> January 2010 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2009/12'> December 2009 &nbsp;(7)</option>
+	<option value='http://blog.farmostwood.net/date/2009/11'> November 2009 &nbsp;(5)</option>
+	<option value='http://blog.farmostwood.net/date/2009/10'> October 2009 &nbsp;(5)</option>
+	<option value='http://blog.farmostwood.net/date/2009/09'> September 2009 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2009/08'> August 2009 &nbsp;(8)</option>
+	<option value='http://blog.farmostwood.net/date/2009/07'> July 2009 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2009/06'> June 2009 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2009/05'> May 2009 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2009/04'> April 2009 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2009/03'> March 2009 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2009/02'> February 2009 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2009/01'> January 2009 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2008/12'> December 2008 &nbsp;(5)</option>
+	<option value='http://blog.farmostwood.net/date/2008/11'> November 2008 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2008/10'> October 2008 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2008/09'> September 2008 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2008/08'> August 2008 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2008/07'> July 2008 &nbsp;(6)</option>
+	<option value='http://blog.farmostwood.net/date/2008/06'> June 2008 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2008/05'> May 2008 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2008/04'> April 2008 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2008/03'> March 2008 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2008/01'> January 2008 &nbsp;(6)</option>
+	<option value='http://blog.farmostwood.net/date/2007/11'> November 2007 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2007/10'> October 2007 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2007/09'> September 2007 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2007/08'> August 2007 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2007/07'> July 2007 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2007/06'> June 2007 &nbsp;(7)</option>
+	<option value='http://blog.farmostwood.net/date/2007/05'> May 2007 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2007/04'> April 2007 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2006/12'> December 2006 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2006/11'> November 2006 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2006/09'> September 2006 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2006/08'> August 2006 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2006/07'> July 2006 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2006/06'> June 2006 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2006/05'> May 2006 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2006/04'> April 2006 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2006/03'> March 2006 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2006/02'> February 2006 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2006/01'> January 2006 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2005/12'> December 2005 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2005/11'> November 2005 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2005/10'> October 2005 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2005/09'> September 2005 &nbsp;(6)</option>
+	<option value='http://blog.farmostwood.net/date/2005/08'> August 2005 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2005/07'> July 2005 &nbsp;(7)</option>
+	<option value='http://blog.farmostwood.net/date/2005/06'> June 2005 &nbsp;(9)</option>
+	<option value='http://blog.farmostwood.net/date/2005/05'> May 2005 &nbsp;(8)</option>
+	<option value='http://blog.farmostwood.net/date/2005/04'> April 2005 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2005/03'> March 2005 &nbsp;(8)</option>
+	<option value='http://blog.farmostwood.net/date/2005/02'> February 2005 &nbsp;(6)</option>
+	<option value='http://blog.farmostwood.net/date/2005/01'> January 2005 &nbsp;(11)</option>
+	<option value='http://blog.farmostwood.net/date/2004/12'> December 2004 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2004/05'> May 2004 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2004/04'> April 2004 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2004/02'> February 2004 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2003/06'> June 2003 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2003/05'> May 2003 &nbsp;(2)</option>
+ </select>
+</ul>
+</li>
+
+
+<!--<li>
+<h2>Twitter</h2>
+<div id="twitter_div"><ul id="twitter_update_list"></ul></div>
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/farmostwood.json?callback=twitterCallback2&count=5"></script>
+</li>-->
+
+
+
+
+<!--<li>
+<h2>Google Share</h2>
+<script type="text/javascript" src="http://www.google.com/reader/ui/publisher-en.js"></script>
+<script type="text/javascript" src="http://www.google.com/reader/public/javascript/user/14182092717333526086/state/com.google/broadcast?n=10&callback=GRC_p(%7Bc%3A%22gray%22%2Ct%3A%22My%20Shared%20Items%22%2Cs%3A%22true%22%2Cn%3A%22true%22%2Cb%3A%22false%22%7D)%3Bnew%20GRC"></script>
+</li>-->
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+<h2>Feed</h2>
+<ul>
+<a href="feed.rss" title="Entries (RSS)"><img src="http://blog.farmostwood.net/wp-content/themes/relaxation_ttftitle/images/rss.png" alt="Entries (RSS)" height="15" width="80"/></a>
+</ul>
+</li>
+
+
+
+
+<li>
+<h2>License</h2>
+<ul>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">
+<img alt="Creative Commons License" style="border-width: 0pt;" src="http://blog.farmostwood.net/wp-content/themes/relaxation_ttftitle/images/CC.png">
+</a>
+</ul>
+</li>
+
+</ul>
+</div> <!-- end of noindent -->
+</div> <!-- end of sidebar --><div id="footer">
+<p>
+<a href="feed.rss">Entries (RSS)</a>
+and <a href="comments/feed.rss">Comments (RSS)</a>.<br />
+<a href="http://wordpress.org">WordPress 3.8.3</a>. <small>54 queries in 3.408 seconds.</small>
+</p>
+</div>
+</div>
+<!-- Powered by WPtouch: 3.4.4 -->	<div style="display:none">
+	</div>
+<script type='text/javascript' src='http://blog.farmostwood.net/wp-content/plugins/akismet/_inc/form.js?ver=3.0.1'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201432'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2014Augaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://blog.farmostwood.net/wp-content/plugins/jetpack/modules/wpgroho.js?ver=3.8.3'></script>
+
+	<script src="http://stats.wp.com/e-201432.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	st_go({v:'ext',j:'1:3.1',blog:'1115230',post:'488',tz:'8'});
+	var load_cmc = function(){linktracker_init(1115230,488,2);};
+	if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+	else load_cmc();
+	</script></body>
+</html>
+<!-- Dynamic page generated in 3.398 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2014-08-04 16:41:44 -->
+
+<!-- super cache -->

@@ -1,0 +1,584 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--<title>木遥的窗子  &raquo; Blog Archive   &raquo; Research Notes: 学 C 编程记</title>-->
+<title>Research Notes: 学 C 编程记 &laquo;  木遥的窗子</title>
+<meta name="generator" content="WordPress 3.8.3" /> <!-- leave this for stats -->
+<link rel="stylesheet" href="http://blog.farmostwood.net/wp-content/themes/relaxation_ttftitle/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="feed.rss" />
+<link rel="alternate" type="text/xml" title="RSS .92" href="http://blog.farmostwood.net/feed/rss" />
+<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://blog.farmostwood.net/feed/atom" />
+<link rel="pingback" href="xmlrpc.php" />
+
+
+
+<link rel="alternate" type="application/rss+xml" title="木遥的窗子 &raquo; Research Notes: 学 C 编程记 Comments Feed" href="http://blog.farmostwood.net/496.html/feed" />
+<link rel='stylesheet' id='jetpack-subscriptions-css'  href='http://blog.farmostwood.net/wp-content/plugins/jetpack/modules/subscriptions/subscriptions.css?ver=3.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack-widgets-css'  href='http://blog.farmostwood.net/wp-content/plugins/jetpack/modules/widgets/widgets.css?ver=20121003' type='text/css' media='all' />
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/prototype/1.7.1.0/prototype.js?ver=1.7.1'></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js?ver=1.9.0'></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/effects.js?ver=1.9.0'></script>
+<script type='text/javascript' src='http://blog.farmostwood.net/wp-content/plugins/lightbox-2/lightbox-resize.js?ver=1.8'></script>
+<script type='text/javascript' src='http://blog.farmostwood.net/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://blog.farmostwood.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php-rsd.xml" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.farmostwood.net/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Research Notes: 鸿沟' href='495.html' />
+<link rel='next' title='无志之人常立志' href='498.html' />
+<meta name="generator" content="WordPress 3.8.3" />
+<link rel='canonical' href='496.html' />
+<link rel='shortlink' href='http://wp.me/p4G7A-80' />
+<script type="text/javascript" src="http://blog.farmostwood.net/wp-content/plugins/audio-player/assets/audio-player.js?ver=2.0.4.6"></script>
+<script type="text/javascript">AudioPlayer.setup("http://blog.farmostwood.net/wp-content/plugins/audio-player/assets/player.swf?ver=2.0.4.6", {width:"290",animation:"yes",encode:"yes",initialvolume:"60",remaining:"no",noinfo:"no",buffer:"5",checkpolicy:"no",rtl:"no",bg:"f8f8f8",text:"666666",leftbg:"eeeeee",lefticon:"666666",volslider:"666666",voltrack:"FFFFFF",rightbg:"cccccc",rightbghover:"999999",righticon:"666666",righticonhover:"ffffff",track:"FFFFFF",loader:"dddddd",border:"666666",tracker:"DDDDDD",skip:"666666",pagebg:"FFFFFF",transparentpagebg:"yes"});</script>
+<script type="text/javascript" src="http://blog.farmostwood.net/wp-content/plugins/flash-video-player/swfobject.js"></script>
+
+	<!-- begin lightbox scripts -->
+	<script type="text/javascript">
+    //<![CDATA[
+    document.write('<link rel="stylesheet" href="http://blog.farmostwood.net/wp-content/plugins/lightbox-2/Themes/Black/lightbox.css" type="text/css" media="screen" />');
+    //]]>
+    </script>
+	<!-- end lightbox scripts -->
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Research Notes: 学 C 编程记" />
+<meta property="og:url" content="http://blog.farmostwood.net/496.html" />
+<meta property="og:description" content="一、 从我大一的时候《计算概论》这门课（基本上相当于 C 语言初步）拿了 62 分之后，我就对 C 再也没有产生过兴趣。 我当然不认为自己缺乏编程的天赋。作为一个从小学数学的学生，编程纵然未必是强项，但是也不会给我带来任何心理压力。我只是单纯地不喜欢它。单单 #include 这一串字符就能让我心生厌恶，这也太违反思维的本性了。为什么仅仅为了计算一加一等于几，我就要以特定的顺序在键盘上敲入这..." />
+<meta property="article:published_time" content="2010-10-16T07:05:05+00:00" />
+<meta property="article:modified_time" content="2010-10-16T07:09:36+00:00" />
+<meta property="article:author" content="http://blog.farmostwood.net/author/farmostwood" />
+<meta property="og:site_name" content="木遥的窗子" />
+<meta property="og:image" content="http://wordpress.com/i/blank.jpg" />
+<meta name="twitter:site" content="@jetpack" />
+<meta name="twitter:card" content="summary" />
+</head>
+<body>
+<div id="page">
+<div id="top"></div>
+<div id="wrapper">
+<div id="header">
+<!--<a style="color: #a9ac99; font: 30px Georgia, 'Times New Roman', Times, serif;" href="http://blog.farmostwood.net" title="木遥的窗子">木遥的窗子</a>-->
+<a href="index.html"><img src="http://blog.farmostwood.net/wp-content/themes/relaxation_ttftitle/images/feather.png" alt="木遥的窗子" title="木遥的窗子" height="100"  /></a> 
+</div><div id="content">
+<div class="post">
+<!--<h1 id="post-496"><a href="http://blog.farmostwood.net/496.html" rel="bookmark" title="Permanent Link: Research Notes: 学 C 编程记">Research Notes: 学 C 编程记</a></h1>-->
+<h1 id="post-496"><a href="496.html" rel="bookmark" title="Permanent Link: Research Notes: 学 C 编程记"><img class="ttf" src="http://blog.farmostwood.net/wp-content/plugins/ttftitles/cache/5016ff1ef5fe6d100f48fe6445ce9d47.png" alt="Research Notes: 学 C 编程记" width="219" height="21" /></a></h1>
+<div class="entrytext">
+<p>一、</p>
+<p>从我大一的时候《计算概论》这门课（基本上相当于 C 语言初步）拿了 62 分之后，我就对 C 再也没有产生过兴趣。</p>
+<p>我当然不认为自己缺乏编程的天赋。作为一个从小学数学的学生，编程纵然未必是强项，但是也不会给我带来任何心理压力。我只是单纯地不喜欢它。单单 #include  这一串字符就能让我心生厌恶，这也太违反思维的本性了。为什么仅仅为了计算一加一等于几，我就要以特定的顺序在键盘上敲入这样毫无意义的字母呢？</p>
+<p>（如果用 Matlab 当然不会有这些烦恼，所以我很多年前就自然而然学会了 Matlab。但是 Matlab 毕竟不是严格意义上的编程语言。当然我们还有 Python，不过这些都是题外话了。）</p>
+<p>每次看到诸如「你用 Perl 还是 Ruby」或者「C 和 Java 哪个有前途」这样的问题，我都会觉得深深地疲倦。所有这些语言，每一种都有它特定的语法习惯，都有它极为莫名其妙的别扭要求。逻辑变量是单字节还是四字节？条件语句是花括号还是无括号缩进？矩阵排列是行优先还是列优先？世界上有这么多优秀的头脑要拿出这么多时间和精力来训练自己熟悉和掌握所有这一切毫不直观并且随时有可能过时的知识，究竟有什么意义？法语或者日语已经够难学了，但是学会了至少可以让自己更容易念萨特和川端康成的书。学会 Fortran 或者 Lisp 能干什么呢？</p>
+<p>所以我一直试图避免让自己去学习任何一种诸如此类的语言。在我念 Ph.D. 的第一年，一个学长告诉我，和 Matlab 这类工具相比，C 的学习曲线要陡峭得多，但是最终能达到的高度也会远<span style="font-size: 13.3333px;">远超出。我想他说的是对的，但是我还是没有学。</span></p>
+<p>二、</p>
+<p>直到上周，由于某个工作上的原因，我忽然觉得自己应该试着学一学 C。大多数我平时的研究用 Matlab 都可以胜任，但是有些计算会牵涉到无法实现为整块矩阵运算的单元素遍历，也有些大数据量的工作会要求非常经济地管理内存，这都是 Matlab 的弱项。我手头的研究中一两个子函数就属于这类情况，如果能用 C 来实现它们再由 Matlab 调用，效率会高很多。</p>
+<p>于是我就下载了一本谭浩强的 C 语言教程，从头看起。我原先的 C 语言水平无法保证我能从零开始写出一个 Hello world! 而不出错。我手头的问题需要我实现一个特定的图像变分去噪算法，而我连条件语句里逻辑判断的写法都不知道。</p>
+<p>但是另一方面，我从不怀疑我事实上「会」编程──我只是不会用 C 把它写出来而已。对于整个算法的数学框架我烂熟于心，手头还有一个我自己写过的 Matlab 代码可资验算。如果我按部就班地从冒泡算法开始写起，我一定会迅速地厌倦学 C 这件事。而现在有一个看起来既艰巨又不是遥不可及的目标摆在前面，反而带来极大的动力。不让自己真正跑起来是学不会走路的。</p>
+<p>一开始很难，无数令人焦头烂额的困难开始浮现，任何一个愚蠢的错误都要让我 google 半天。有的时候是我自己愚蠢，但是更多时候──我不得不说──是这门语言本身愚蠢。写 C 程序的过程本质上是一个自己挖空心思去模仿乃至取悦 CPU 和内存的过程，它极度不自然，无论在算法层面还是语法层面都是如此。</p>
+<p>但是渐渐地，这件事情开始显示出乐趣来，特别是从我能够得心应手地操纵指针开始。分配内存，传递参数，规划指针遍历的路径，这些事情里蕴藏着类似于手工艺活般地精巧和灵活性。最短的几个子函数正确完成之后，后面的工作就像水银泻地一样展开。我开始沉迷于这件事情，无论是吃饭还是坐车上班还是在别人的讨论班上听讲，满脑子想的都是程序的写法，或者换一种排序方式，或者增加一个索引变量。前天工作到深夜终于完成框架，昨天早上爬起来又迫不及待地要开始调试细节，昨天睡觉之前终于得到和我预期分毫不差的测试结果，今天忍不住又想要把整个算法推倒重来，因为我觉得我又想到了一种新的循环结构，可以减少两个条件判断语句的调用次数。我知道它已经很快了，我还想要它更快。</p>
+<p>直到刚才，我最后做完一遍测试，保存，退出。这不眠不休的兴奋感终于像潮水一样退去了。</p>
+<p>三、</p>
+<p>我学到了很多东西。我可以从此不用再羞于承认我并不会在「真正意义上」编程，我可以在以后的研究里用更快的程序来实现算法，找工作也会稍微多一点底气──如果我真的不幸要找这样一份工作的话。</p>
+<p>但是我并没因此改变我对编程这件事情的看法。掌握一种新工具所带来的新鲜感是令人眩惑乃至沉迷的，但是也仅限于此。设计一个好的图像去噪模型，和给出一个精巧的代码实现相比，后者「亲自动手」的感觉要强烈得多，面对漂亮结果的成就感也强烈得多。但是这并不能改变它更容易也更无聊的事实。</p>
+<p>为什么会有人喜欢把这种事情作为职业呢？</p>
+<p>无论如何，我也许应该感谢它帮助我度过了这本来也许很难熬的一周。事实证明，越是难过的时候，就越是适合学新东西的时候。前面还有一个漫长的冬季在等着我，没准我可以把上面提到的所有语言都学一遍。</p>
+<p class="postmetadata alt">
+<small>
+This entry was posted on Saturday, October 16th, 2010 at 3:05pm 
+and is filed under <a href="http://blog.farmostwood.net/category/research" title="View all posts in Research" rel="category tag">Research</a>.
+You can follow any responses to this entry through the <a href='http://blog.farmostwood.net/496.html/feed'>RSS 2.0</a> feed. 
+You can <a href="496.html#respond">leave a response</a> or <a href="496.html">trackback</a> from your own site. 
+</small>
+</p>
+</div>
+</div>
+<!-- You can start editing here. -->
+<h3 id="comments">37 Responses to &#8220;Research Notes: 学 C 编程记&#8221;</h3> 
+<ol class="commentlist">
+<li class="commentbody" id="comment-4370">
+Annie<br />
+<a class="commentlink" href="496.html#comment-4370" title="">October 16th, 2010 15:20</a> <div class="commentcount">1</div>
+<p>遇到技术困难的时候，都会感慨要是我会编程就好了。。。可是接下来又会反问&#8211;为什么要把时间投入在这个看起来很无聊而又极少能用到的地方呢。。。<br />
+你这篇文大概无疑把这个过程美好话了，至少看上去是那样。</p>
+<p>赞最后一段，越是难过就越是要学新东西。至少怀着这种精神，有了点那么熬过前方漫长艰难冬天的勇气。。。</p>
+</li>
+<li class="commentbody" id="comment-4371">
+<a href='http://changlan.tk' rel='external nofollow' class='url'>Lan</a><br />
+<a class="commentlink" href="496.html#comment-4371" title="">October 16th, 2010 17:03</a> <div class="commentcount">2</div>
+<p>我一直觉得学数学的人跟学CS的比起来就是怪兽，学起编程来都易如反掌呢</p>
+</li>
+<li class="commentbody" id="comment-4372">
+hayate<br />
+<a class="commentlink" href="496.html#comment-4372" title="">October 16th, 2010 17:10</a> <div class="commentcount">3</div>
+<p>不要看谭浩强的呀，看TCPL就好了<br />
+C本来就不是给人带来编程乐趣的语言，它就是在机器上面一个简单的抽象</p>
+</li>
+<li class="commentbody" id="comment-4373">
+yzq<br />
+<a class="commentlink" href="496.html#comment-4373" title="">October 16th, 2010 18:34</a> <div class="commentcount">4</div>
+<p>心有亲戚</p>
+</li>
+<li class="commentbody" id="comment-4374">
+<a href='http://ioio.name' rel='external nofollow' class='url'>枯藤昏鸦</a><br />
+<a class="commentlink" href="496.html#comment-4374" title="">October 16th, 2010 18:37</a> <div class="commentcount">5</div>
+<p>压力和兴趣一样，都是最好的老师</p>
+</li>
+<li class="commentbody" id="comment-4375">
+Lazy<br />
+<a class="commentlink" href="496.html#comment-4375" title="">October 16th, 2010 19:00</a> <div class="commentcount">6</div>
+<p>作为CS专业的人，看一个数学专业的人学C语言感觉很有趣。</p>
+<p>至于为什么会觉得写代码很有趣，原因因人而异。<br />
+不过最核心的乐趣我想都差不多：就如同搭积木一样，用仅仅图灵完备的简单部件就能搭建出一个精密的玩具甚至是整个世界。这样的乐趣我想并不亚于数学</p>
+</li>
+<li class="commentbody" id="comment-4376">
+fooy<br />
+<a class="commentlink" href="496.html#comment-4376" title="">October 16th, 2010 19:06</a> <div class="commentcount">7</div>
+<p>码农无比惭愧的路过</p>
+</li>
+<li class="commentbody" id="comment-4378">
+<a href='http://www.julyau.me' rel='external nofollow' class='url'>Shannon</a><br />
+<a class="commentlink" href="496.html#comment-4378" title="">October 16th, 2010 20:28</a> <div class="commentcount">8</div>
+<p>最近正筹划用寒假自学下C…… 怎么听上去那么不靠谱啊</p>
+</li>
+<li class="commentbody" id="comment-4379">
+passby<br />
+<a class="commentlink" href="496.html#comment-4379" title="">October 16th, 2010 22:03</a> <div class="commentcount">9</div>
+<p>实现一个小算法当然就那么回事，博主要是做过操作系统，搜索引擎这样的大系统就不会觉得编程无聊了。</p>
+</li>
+<li class="commentbody" id="comment-4380">
+hello world<br />
+<a class="commentlink" href="496.html#comment-4380" title="">October 16th, 2010 22:07</a> <div class="commentcount">10</div>
+<p>要是没有从事无聊编程的coder们，博主怕是没有matlab用了。</p>
+</li>
+<li class="commentbody" id="comment-4386">
+eliw<br />
+<a class="commentlink" href="496.html#comment-4386" title="">October 17th, 2010 12:41</a> <div class="commentcount">11</div>
+<p>无论你使用什么样的语言，它们只是你想去做的事的工具而已。没必要对工具本身有这么大的意见吧。不爽就换别的或着试着去改进它。</p>
+</li>
+<li class="commentbody" id="comment-4389">
+<a href='http://yongjiu.org' rel='external nofollow' class='url'>上海永久</a><br />
+<a class="commentlink" href="496.html#comment-4389" title="">October 17th, 2010 17:05</a> <div class="commentcount">12</div>
+<p>兴趣是王道。。。</p>
+</li>
+<li class="commentbody" id="comment-4394">
+bluegene_hao<br />
+<a class="commentlink" href="496.html#comment-4394" title="">October 18th, 2010 01:20</a> <div class="commentcount">13</div>
+<p>CS专业绝不是仅仅学语言（这也是很多非CS专业对CS的一种误解，语言只是最基本的东西）；程序开发也绝不仅仅只是写代码；CS专业也绝不仅仅等同于程序开发（要不也不会有后面的这个S了）；系统、算法、模式、架构、各种原理、方法论还有很多数学方面的东西。。。有太多太多吸引你的了。如果你还处在关注语言特性本身的这个阶段，可能是很难理解或是有这样的感受的。</p>
+<p>还有，语言是工具，编程是手段，通过这样的工具和手段去解决问题，才是最有魅力的事情，而所要解决的问题就可能涵盖许许多多方面，比如你面对的，人们生活中需要解决的，以及CS专业本身涉及的问题，而解决这些问题的方法会牵扯出很多理论，这些理论构成了CS的内涵，所以学CS的绝不仅仅是你说的“代码实现”。<br />
+希望我把我想说的表述清除了 ：）</p>
+</li>
+<li class="commentbody" id="comment-4396">
+wealk<br />
+<a class="commentlink" href="496.html#comment-4396" title="">October 18th, 2010 11:01</a> <div class="commentcount">14</div>
+<p>编程语言是要调和抽象的计算和具体实现的矛盾的，比如你说的#include；所以说，语言的分化，完全是因为语言的分工。</p>
+</li>
+<li class="commentbody" id="comment-4398">
+Sha<br />
+<a class="commentlink" href="496.html#comment-4398" title="">October 19th, 2010 00:45</a> <div class="commentcount">15</div>
+<p>同赞最后一段，不谋而合阿，当然不是说要学编程，我想学日语了，有兴趣的话一起学？hoho</p>
+</li>
+<li class="commentbody" id="comment-4399">
+<a href='http://an.haokanbu.com' rel='external nofollow' class='url'>ant</a><br />
+<a class="commentlink" href="496.html#comment-4399" title="">October 19th, 2010 09:59</a> <div class="commentcount">16</div>
+<p>关键要选择对入门书籍：</p>
+<p><a href="http://book.douban.com/doulist/22051/" rel="nofollow">http://book.douban.com/doulist/22051/</a></p>
+</li>
+<li class="commentbody" id="comment-4401">
+lileding<br />
+<a class="commentlink" href="496.html#comment-4401" title="">October 19th, 2010 21:04</a> <div class="commentcount">17</div>
+<p>英语语法也反人类，不知道你是喜欢学还是被逼无奈。学编程就好比学写字，写字比写诗容易得多，但诗人没理由看不上书法家。各有一好而已。</p>
+</li>
+<li class="commentbody" id="comment-4402">
+<a href='http://b3log-88250.appspot.com' rel='external nofollow' class='url'>88250</a><br />
+<a class="commentlink" href="496.html#comment-4402" title="">October 19th, 2010 21:44</a> <div class="commentcount">18</div>
+<p>作为一个中国码农：”Code for Food“。</p>
+</li>
+<li class="commentbody" id="comment-4403">
+<a href='http://none' rel='external nofollow' class='url'>feyan</a><br />
+<a class="commentlink" href="496.html#comment-4403" title="">October 20th, 2010 10:37</a> <div class="commentcount">19</div>
+<p>1，喜欢的事情做为职业，是一件很幸福的事情。<br />
+2，不会C的世界也很精彩</p>
+</li>
+<li class="commentbody" id="comment-4404">
+<a href='http://zhiqiang.org/blog/' rel='external nofollow' class='url'>zhiqiang</a><br />
+<a class="commentlink" href="496.html#comment-4404" title="">October 20th, 2010 16:52</a> <div class="commentcount">20</div>
+<p>我手头的问题需要我实现一个特定的图像变分去噪算法，而我连条件语句里逻辑判断的写法都不知道。<br />
+——————————————————————<br />
+这些基本东西，会了一种语言，其余都大同小异。你这次学C这么快，是因为有了Matlab的基础 :)</p>
+<p>之前这么讨厌C，为何没讨厌Matlab呢</p>
+</li>
+<li class="commentbody" id="comment-4405">
+Leroy<br />
+<a class="commentlink" href="496.html#comment-4405" title="">October 21st, 2010 08:01</a> <div class="commentcount">21</div>
+<p>C++才是真正和蔼可亲的语言<br />
+CS里，只有做底层硬件设计才用C。</p>
+</li>
+<li class="commentbody" id="comment-4406">
+tenabaumn<br />
+<a class="commentlink" href="496.html#comment-4406" title="">October 21st, 2010 14:09</a> <div class="commentcount">22</div>
+<p>楼主在数学的世界里畅游过后对比编程的乐趣可能就不是那么强烈了,其实大多数人的世界哪有那么多的介质去体验艺术,想象力,所以有编程的存在对一些人来说也许就是生活的主要乐趣来源了.又可以赚生存费.想冯若依曼当初也是数学奇才,才思敏捷,他能提出最初的计算机架构也许也是他想象力的延展.</p>
+</li>
+<li class="commentbody" id="comment-4408">
+zcq<br />
+<a class="commentlink" href="496.html#comment-4408" title="">October 22nd, 2010 11:27</a> <div class="commentcount">23</div>
+<p>订阅了博客，一直放在最下面，没时间的时候就直接点击已阅读。<br />
+今天看了真的觉得很不错的博客~原来是别人推荐，未在意，现在呢，是真的喜欢上了~谢谢</p>
+</li>
+<li class="commentbody" id="comment-4410">
+wl<br />
+<a class="commentlink" href="496.html#comment-4410" title="">October 23rd, 2010 13:06</a> <div class="commentcount">24</div>
+<p>数学也不是一个工具么 也不是cs的工具么<br />
+完成了一个相当于undergrad的入门课程如何就能claim这是更简单又更无聊呢</p>
+</li>
+<li class="commentbody" id="comment-4425">
+<a href='http://www.shaog.com/' rel='external nofollow' class='url'>韶关家园</a><br />
+<a class="commentlink" href="496.html#comment-4425" title="">October 26th, 2010 11:55</a> <div class="commentcount">25</div>
+<p>以前也没学好C  现在做代码工人。</p>
+</li>
+<li class="commentbody" id="comment-4426">
+yang<br />
+<a class="commentlink" href="496.html#comment-4426" title="">October 26th, 2010 13:30</a> <div class="commentcount">26</div>
+<p>LS有人解释了CS和写代码是两件不同的事。事实上CS系里存在着很多从来不写代码的老板。但是写代码是CS的一部分，并且是重要的。对于CS而言，很多时候只有真的把一件事实现出来，你才会明白what&#8217;s going on, where it goes wrong, and why tons of papers are just garbage.对于做数学的人而言好的模型可能足够了，但是有时候一个非常fancy的模型是不可能被用到实际的系统里去的。这个判断的能力，是靠实现来培养的。</p>
+<p>然后其实想解释一下“为什么会有人喜欢把这种事情作为职业呢？”</p>
+<p>其实我觉得有必要把写代码的人分成两类，一类人写代码，因为写代码是工作的全部。另一类人写代码，因为写代码是工作的一部分。对于第一类人，其实我不觉得他们真的喜欢这个职业。但这个世界提供了很多这样的职位，并且，这个职业从收入和乐趣的角度而言好过一些别的职业。对于第二类人，参考第一段。</p>
+<p>两类人都可以称为程序员，于是程序员既是这个世界上不需要使用大脑的职业中相对overpaid一群人，同时也是这个世界上需要使用大脑的职业中相对underpaid的一群人。他们既不快乐，又快乐。:)</p>
+</li>
+<li class="commentbody" id="comment-4427">
+yang<br />
+<a class="commentlink" href="496.html#comment-4427" title="">October 26th, 2010 13:37</a> <div class="commentcount">27</div>
+<p>另外我觉得你从事不是数学，而是EE。显然对你来说数学已经是纯粹的工具，而不是你研究的对象。CS跟EE在这一点上是一样的，模型和实现，各自重要的都是工具。</p>
+</li>
+<li class="commentbody" id="comment-4428">
+<a href='http://www.helishi.net' rel='external nofollow' class='url'>ikbear</a><br />
+<a class="commentlink" href="496.html#comment-4428" title="">October 26th, 2010 18:07</a> <div class="commentcount">28</div>
+<p>木匠工干的是木匠活，程序员干的是程序活，你做数学做算法干的也是一份活而已。如果你在自己领域没有天才般的创意，没有被大众认可的划时代的贡献，那么在外人看来你的工作也应该很无聊吧。<br />
+本科的上高数课的时候，我一直在想，如果这些老师天天起来都是上同一本高数书，没有一点点创新，他们会不会觉得无聊？反正上课的我一想到这些是很无聊的。</p>
+</li>
+<li class="commentbody" id="comment-4481">
+lambda<br />
+<a class="commentlink" href="496.html#comment-4481" title="">November 7th, 2010 12:03</a> <div class="commentcount">29</div>
+<p>yang 说得很中肯。 +1</p>
+</li>
+<li class="commentbody" id="comment-4501">
+<a href='http://AndNot.WordPress.com' rel='external nofollow' class='url'>与非</a><br />
+<a class="commentlink" href="496.html#comment-4501" title="">November 8th, 2010 20:16</a> <div class="commentcount">30</div>
+<p>木遥用过Mathematics没?<br />
+个人感觉这个工具比Matlab还要个弓虽。</p>
+</li>
+<li class="commentbody" id="comment-4555">
+Jun Zhou<br />
+<a class="commentlink" href="496.html#comment-4555" title="">November 19th, 2010 17:42</a> <div class="commentcount">31</div>
+<p>谭浩强毁了众多 C 语言初学者</p>
+</li>
+<li class="commentbody" id="comment-5344">
+雨燕<br />
+<a class="commentlink" href="496.html#comment-5344" title="">May 17th, 2011 16:27</a> <div class="commentcount">32</div>
+<p>计算机可以重新发明一遍，按照国人的文字趣味！</p>
+</li>
+<li class="commentbody" id="comment-6711">
+gear<br />
+<a class="commentlink" href="496.html#comment-6711" title="">March 29th, 2012 21:25</a> <div class="commentcount">33</div>
+<p>我是学CS的本科生，第一门语言就是C。木遥把C语言看的太轻了。码农这种工作确实无趣，是有创造性的人难以忍受的。但是以C语言为生的人恰恰不是码农。一个算法就是聚焦在一点上解决一个问题，所以数学人的程序不过百余行。如果程序量再大，这些函数如何架构，各部分如何工作都会是问题。大程序像个社会，一个聪明人不能解决什么问题，要大家协作才行。<br />
+令:我猜想你的变量名用的类似A，AA，AAA，A1，A2……不知道对不对？</p>
+</li>
+<li class="commentbody" id="comment-7856">
+gordon<br />
+<a class="commentlink" href="496.html#comment-7856" title="">April 22nd, 2013 18:06</a> <div class="commentcount">34</div>
+<p>木遥的直觉是正确的，</p>
+<p>写 C 程序的过程本质上是一个自己挖空心思去模仿乃至取悦 CPU 和内存的过程，它极度不自然。</p>
+<p>程序语言的形式限制了程序员对程序关键部分的理解。于是伪代码（pseudocode）产生了，它是一种算法描述语言。</p>
+</li>
+<li class="commentbody" id="comment-8800">
+<a href='http://definiter.net' rel='external nofollow' class='url'>Definiter</a><br />
+<a class="commentlink" href="496.html#comment-8800" title="">September 22nd, 2013 22:21</a> <div class="commentcount">35</div>
+<p>计算概论&#8230;我现在正在上这门课，几年了？</p>
+</li>
+<li class="commentbody" id="comment-8803">
+Stephen<br />
+<a class="commentlink" href="496.html#comment-8803" title="">October 2nd, 2013 18:29</a> <div class="commentcount">36</div>
+<p>不同的语言有不同的作用，用筷子喝汤有困难并不全是筷子的错<br />
+C语言非常贴近CPU的真实运算过程，这正是这门语言的优点和缺点所在，缺点在于很多高层次的运算描述，C语言做不了或者很麻烦，但正是C语言对CPU的贴近，利用C语言进行速度优化也就变得很直接，而其他语言要做这样的事情就依赖非常复杂的编译器实现，以及语言习惯对编译技术的妥协，所谓有得必有失</p>
+</li>
+<li class="commentbody" id="comment-9959">
+<a href='http://www.xavierchiang.me' rel='external nofollow' class='url'>xavier</a><br />
+<a class="commentlink" href="496.html#comment-9959" title="">July 26th, 2014 18:15</a> <div class="commentcount">37</div>
+<p>oh,你居然用谭浩强那本书，感觉不到乐趣是应该的。。</p>
+</li>
+</ol>
+<h3 id="respond">Leave a Reply</h3>
+<form action="http://blog.farmostwood.net/wp-comments-post.php" method="post" id="commentform">
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author"><small>Name (required)</small></label></p>
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+<label for="email"><small>Mail (will not be published) (required)</small></label></p>
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Website</small></label></p>
+<!--<p><small><strong>XHTML:</strong> You can use these tags: &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </small></p>-->
+<p><textarea name="comment" id="comment" cols="50" rows="10" tabindex="4"></textarea></p>
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit" />
+<input type="hidden" name="comment_post_ID" value="496" />
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="49520ac867" /></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_comments" id="subscribe_comments" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-label" for="subscribe_comments">Notify me of follow-up comments by email.</label></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">Notify me of new posts by email.</label></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="98"/></p></form>
+<div class="navigation">
+<div class="alignleft">&laquo; <a href="495.html">Research Notes: 鸿沟</a></div>
+<div class="alignright"> <a href="498.html">无志之人常立志</a> &raquo;</div>
+</div>
+</div>
+</div>
+﻿<div id="sidebar">
+<div id="noindent">
+<ul>
+
+<li>
+<h2>Search</h2>
+<form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+</div>
+</form></li>
+
+
+<li>
+<h2>About Me</h2>
+<ul>
+<li><a href="about.html">关于我。</a></li>
+<li><a href="http://imaginary.farmostwood.net">数学。</a></li>
+<li><a href="http://fiction.farmostwood.net">小说。</a></li>
+<li><a href="sitemap.html">本站目录。</a></li>
+</ul>
+</li>
+
+
+<li>
+<h2>Current Music</h2>
+<ul>
+<li><object type="application/x-shockwave-flash" data="multimedia/player.swf" width="160" height="24" id="audioplayer1"><param name="movie" value="http://blog.farmostwood.net/wp-content/plugins/audio-player/player.swf" /><param name="FlashVars" value="playerID=1&amp;bg=0xf8f8f8&amp;leftbg=0xeeeeee&amp;lefticon=0x666666&amp;rightbg=0xcccccc&amp;rightbghover=0x999999&amp;righticon=0x666666&amp;righticonhover=0xffffff&amp;text=0x666666&amp;slider=0x666666&amp;track=0xFFFFFF&amp;border=0x666666&amp;loader=0xdddddd&amp;soundFile=http%3A%2F%2Fblog.farmostwood.net%2Fmultimedia%2FSidebar%2FHace_Tuto_Guagua-Familion
+.mp3" /><param name="quality" value="high" /><param name="menu" value="false" /><param name="wmode" value="transparent"/></object></li>
+<li>Hace Tuto Guagua</li>
+<li>Performer: Familion</li>
+</ul>
+</li>
+
+<li>
+<h2>Categories</h2>
+<ul>
+	<li class="cat-item cat-item-93"><a href="http://blog.farmostwood.net/category/article" title="View all posts filed under Article">Article</a> (23)
+</li>
+	<li class="cat-item cat-item-5"><a href="http://blog.farmostwood.net/category/diary" title="View all posts filed under Diary">Diary</a> (160)
+</li>
+	<li class="cat-item cat-item-120"><a href="http://blog.farmostwood.net/category/fiction" title="View all posts filed under Fiction">Fiction</a> (5)
+</li>
+	<li class="cat-item cat-item-10"><a href="http://blog.farmostwood.net/category/movie" title="View all posts filed under Movie">Movie</a> (25)
+</li>
+	<li class="cat-item cat-item-3"><a href="http://blog.farmostwood.net/category/music" title="View all posts filed under Music">Music</a> (19)
+</li>
+	<li class="cat-item cat-item-121"><a href="http://blog.farmostwood.net/category/photo" title="View all posts filed under Photo">Photo</a> (46)
+</li>
+	<li class="cat-item cat-item-11"><a href="http://blog.farmostwood.net/category/reading" title="View all posts filed under Reading">Reading</a> (20)
+</li>
+	<li class="cat-item cat-item-118"><a href="http://blog.farmostwood.net/category/research" title="View all posts filed under Research">Research</a> (5)
+</li>
+	<li class="cat-item cat-item-110"><a href="http://blog.farmostwood.net/category/technology" title="View all posts filed under Technology">Technology</a> (29)
+</li>
+	<li class="cat-item cat-item-117"><a href="http://blog.farmostwood.net/category/travel" title="View all posts filed under Travel">Travel</a> (36)
+</li>
+</ul>
+</li>
+
+<li>
+<h2>Archive</h2>
+<ul>
+<select name=\"archive-dropdown\" onChange='document.location.href=this.options[this.selectedIndex].value;'> 
+  <option value=\"\">Select Month</option> 
+  	<option value='http://blog.farmostwood.net/date/2014/07'> July 2014 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2014/06'> June 2014 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2014/05'> May 2014 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2014/04'> April 2014 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2014/02'> February 2014 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2013/11'> November 2013 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2013/08'> August 2013 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2013/07'> July 2013 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2013/05'> May 2013 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2013/04'> April 2013 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2013/03'> March 2013 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2013/02'> February 2013 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2013/01'> January 2013 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2012/12'> December 2012 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2012/11'> November 2012 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2012/09'> September 2012 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2012/08'> August 2012 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2012/07'> July 2012 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2012/06'> June 2012 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2012/03'> March 2012 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2012/01'> January 2012 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2011/12'> December 2011 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2011/11'> November 2011 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2011/10'> October 2011 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2011/09'> September 2011 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2011/08'> August 2011 &nbsp;(10)</option>
+	<option value='http://blog.farmostwood.net/date/2011/07'> July 2011 &nbsp;(5)</option>
+	<option value='http://blog.farmostwood.net/date/2011/06'> June 2011 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2011/05'> May 2011 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2011/04'> April 2011 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2011/03'> March 2011 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2011/02'> February 2011 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2011/01'> January 2011 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2010/12'> December 2010 &nbsp;(8)</option>
+	<option value='http://blog.farmostwood.net/date/2010/11'> November 2010 &nbsp;(5)</option>
+	<option value='http://blog.farmostwood.net/date/2010/10'> October 2010 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2010/09'> September 2010 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2010/08'> August 2010 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2010/07'> July 2010 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2010/06'> June 2010 &nbsp;(6)</option>
+	<option value='http://blog.farmostwood.net/date/2010/05'> May 2010 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2010/04'> April 2010 &nbsp;(11)</option>
+	<option value='http://blog.farmostwood.net/date/2010/03'> March 2010 &nbsp;(6)</option>
+	<option value='http://blog.farmostwood.net/date/2010/02'> February 2010 &nbsp;(5)</option>
+	<option value='http://blog.farmostwood.net/date/2010/01'> January 2010 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2009/12'> December 2009 &nbsp;(7)</option>
+	<option value='http://blog.farmostwood.net/date/2009/11'> November 2009 &nbsp;(5)</option>
+	<option value='http://blog.farmostwood.net/date/2009/10'> October 2009 &nbsp;(5)</option>
+	<option value='http://blog.farmostwood.net/date/2009/09'> September 2009 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2009/08'> August 2009 &nbsp;(8)</option>
+	<option value='http://blog.farmostwood.net/date/2009/07'> July 2009 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2009/06'> June 2009 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2009/05'> May 2009 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2009/04'> April 2009 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2009/03'> March 2009 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2009/02'> February 2009 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2009/01'> January 2009 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2008/12'> December 2008 &nbsp;(5)</option>
+	<option value='http://blog.farmostwood.net/date/2008/11'> November 2008 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2008/10'> October 2008 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2008/09'> September 2008 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2008/08'> August 2008 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2008/07'> July 2008 &nbsp;(6)</option>
+	<option value='http://blog.farmostwood.net/date/2008/06'> June 2008 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2008/05'> May 2008 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2008/04'> April 2008 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2008/03'> March 2008 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2008/01'> January 2008 &nbsp;(6)</option>
+	<option value='http://blog.farmostwood.net/date/2007/11'> November 2007 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2007/10'> October 2007 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2007/09'> September 2007 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2007/08'> August 2007 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2007/07'> July 2007 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2007/06'> June 2007 &nbsp;(7)</option>
+	<option value='http://blog.farmostwood.net/date/2007/05'> May 2007 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2007/04'> April 2007 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2006/12'> December 2006 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2006/11'> November 2006 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2006/09'> September 2006 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2006/08'> August 2006 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2006/07'> July 2006 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2006/06'> June 2006 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2006/05'> May 2006 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2006/04'> April 2006 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2006/03'> March 2006 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2006/02'> February 2006 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2006/01'> January 2006 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2005/12'> December 2005 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2005/11'> November 2005 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2005/10'> October 2005 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2005/09'> September 2005 &nbsp;(6)</option>
+	<option value='http://blog.farmostwood.net/date/2005/08'> August 2005 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2005/07'> July 2005 &nbsp;(7)</option>
+	<option value='http://blog.farmostwood.net/date/2005/06'> June 2005 &nbsp;(9)</option>
+	<option value='http://blog.farmostwood.net/date/2005/05'> May 2005 &nbsp;(8)</option>
+	<option value='http://blog.farmostwood.net/date/2005/04'> April 2005 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2005/03'> March 2005 &nbsp;(8)</option>
+	<option value='http://blog.farmostwood.net/date/2005/02'> February 2005 &nbsp;(6)</option>
+	<option value='http://blog.farmostwood.net/date/2005/01'> January 2005 &nbsp;(11)</option>
+	<option value='http://blog.farmostwood.net/date/2004/12'> December 2004 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2004/05'> May 2004 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2004/04'> April 2004 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2004/02'> February 2004 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2003/06'> June 2003 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2003/05'> May 2003 &nbsp;(2)</option>
+ </select>
+</ul>
+</li>
+
+
+<!--<li>
+<h2>Twitter</h2>
+<div id="twitter_div"><ul id="twitter_update_list"></ul></div>
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/farmostwood.json?callback=twitterCallback2&count=5"></script>
+</li>-->
+
+
+
+
+<!--<li>
+<h2>Google Share</h2>
+<script type="text/javascript" src="http://www.google.com/reader/ui/publisher-en.js"></script>
+<script type="text/javascript" src="http://www.google.com/reader/public/javascript/user/14182092717333526086/state/com.google/broadcast?n=10&callback=GRC_p(%7Bc%3A%22gray%22%2Ct%3A%22My%20Shared%20Items%22%2Cs%3A%22true%22%2Cn%3A%22true%22%2Cb%3A%22false%22%7D)%3Bnew%20GRC"></script>
+</li>-->
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+<h2>Feed</h2>
+<ul>
+<a href="feed.rss" title="Entries (RSS)"><img src="http://blog.farmostwood.net/wp-content/themes/relaxation_ttftitle/images/rss.png" alt="Entries (RSS)" height="15" width="80"/></a>
+</ul>
+</li>
+
+
+
+
+<li>
+<h2>License</h2>
+<ul>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">
+<img alt="Creative Commons License" style="border-width: 0pt;" src="http://blog.farmostwood.net/wp-content/themes/relaxation_ttftitle/images/CC.png">
+</a>
+</ul>
+</li>
+
+</ul>
+</div> <!-- end of noindent -->
+</div> <!-- end of sidebar --><div id="footer">
+<p>
+<a href="feed.rss">Entries (RSS)</a>
+and <a href="comments/feed.rss">Comments (RSS)</a>.<br />
+<a href="http://wordpress.org">WordPress 3.8.3</a>. <small>54 queries in 1.961 seconds.</small>
+</p>
+</div>
+</div>
+<!-- Powered by WPtouch: 3.4.4 -->	<div style="display:none">
+	</div>
+<script type='text/javascript' src='http://blog.farmostwood.net/wp-content/plugins/akismet/_inc/form.js?ver=3.0.1'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201432'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2014Augaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://blog.farmostwood.net/wp-content/plugins/jetpack/modules/wpgroho.js?ver=3.8.3'></script>
+
+	<script src="http://stats.wp.com/e-201432.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	st_go({v:'ext',j:'1:3.1',blog:'1115230',post:'496',tz:'8'});
+	var load_cmc = function(){linktracker_init(1115230,496,2);};
+	if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+	else load_cmc();
+	</script></body>
+</html>
+<!-- Dynamic page generated in 1.952 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2014-08-04 16:41:39 -->
+
+<!-- super cache -->

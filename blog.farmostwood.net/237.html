@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--<title>木遥的窗子  &raquo; Blog Archive   &raquo; Tech Notes: 关于feed的困惑</title>-->
+<title>Tech Notes: 关于feed的困惑 &laquo;  木遥的窗子</title>
+<meta name="generator" content="WordPress 3.8.3" /> <!-- leave this for stats -->
+<link rel="stylesheet" href="http://blog.farmostwood.net/wp-content/themes/relaxation_ttftitle/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="feed.rss" />
+<link rel="alternate" type="text/xml" title="RSS .92" href="http://blog.farmostwood.net/feed/rss" />
+<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://blog.farmostwood.net/feed/atom" />
+<link rel="pingback" href="xmlrpc.php" />
+
+
+
+<link rel="alternate" type="application/rss+xml" title="木遥的窗子 &raquo; Tech Notes: 关于feed的困惑 Comments Feed" href="http://blog.farmostwood.net/237.html/feed" />
+<link rel='stylesheet' id='jetpack-subscriptions-css'  href='http://blog.farmostwood.net/wp-content/plugins/jetpack/modules/subscriptions/subscriptions.css?ver=3.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack-widgets-css'  href='http://blog.farmostwood.net/wp-content/plugins/jetpack/modules/widgets/widgets.css?ver=20121003' type='text/css' media='all' />
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/prototype/1.7.1.0/prototype.js?ver=1.7.1'></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js?ver=1.9.0'></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/effects.js?ver=1.9.0'></script>
+<script type='text/javascript' src='http://blog.farmostwood.net/wp-content/plugins/lightbox-2/lightbox-resize.js?ver=1.8'></script>
+<script type='text/javascript' src='http://blog.farmostwood.net/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://blog.farmostwood.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php-rsd.xml" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.farmostwood.net/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Public World, Personal Dream' href='214.html' />
+<link rel='next' title='Tech Notes: iphone 3G, to buy or not to buy.' href='241.html' />
+<meta name="generator" content="WordPress 3.8.3" />
+<link rel='canonical' href='237.html' />
+<link rel='shortlink' href='http://wp.me/p4G7A-3P' />
+<script type="text/javascript" src="http://blog.farmostwood.net/wp-content/plugins/audio-player/assets/audio-player.js?ver=2.0.4.6"></script>
+<script type="text/javascript">AudioPlayer.setup("http://blog.farmostwood.net/wp-content/plugins/audio-player/assets/player.swf?ver=2.0.4.6", {width:"290",animation:"yes",encode:"yes",initialvolume:"60",remaining:"no",noinfo:"no",buffer:"5",checkpolicy:"no",rtl:"no",bg:"f8f8f8",text:"666666",leftbg:"eeeeee",lefticon:"666666",volslider:"666666",voltrack:"FFFFFF",rightbg:"cccccc",rightbghover:"999999",righticon:"666666",righticonhover:"ffffff",track:"FFFFFF",loader:"dddddd",border:"666666",tracker:"DDDDDD",skip:"666666",pagebg:"FFFFFF",transparentpagebg:"yes"});</script>
+<script type="text/javascript" src="http://blog.farmostwood.net/wp-content/plugins/flash-video-player/swfobject.js"></script>
+
+	<!-- begin lightbox scripts -->
+	<script type="text/javascript">
+    //<![CDATA[
+    document.write('<link rel="stylesheet" href="http://blog.farmostwood.net/wp-content/plugins/lightbox-2/Themes/Black/lightbox.css" type="text/css" media="screen" />');
+    //]]>
+    </script>
+	<!-- end lightbox scripts -->
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Tech Notes: 关于feed的困惑" />
+<meta property="og:url" content="http://blog.farmostwood.net/237.html" />
+<meta property="og:description" content="昨天在琢磨开始技术文章的新分类的时候，发现自己又开始因为feed的问题而纠结了。 在此之前我的做法基本上和绝大多数wordpress使用者类似：用feedburner烧制自己的feed，然后用feedsmith这个插件把blog的原始feed重定向至feedburner。我在自己的blog上提供的feed地址一律是原始地址，但是事实上，google reader显示订阅到我的原始feed的读..." />
+<meta property="article:published_time" content="2008-07-18T11:51:30+00:00" />
+<meta property="article:modified_time" content="2008-08-18T18:52:21+00:00" />
+<meta property="article:author" content="http://blog.farmostwood.net/author/farmostwood" />
+<meta property="og:site_name" content="木遥的窗子" />
+<meta property="og:image" content="http://wordpress.com/i/blank.jpg" />
+<meta name="twitter:site" content="@jetpack" />
+<meta name="twitter:card" content="summary" />
+</head>
+<body>
+<div id="page">
+<div id="top"></div>
+<div id="wrapper">
+<div id="header">
+<!--<a style="color: #a9ac99; font: 30px Georgia, 'Times New Roman', Times, serif;" href="http://blog.farmostwood.net" title="木遥的窗子">木遥的窗子</a>-->
+<a href="index.html"><img src="http://blog.farmostwood.net/wp-content/themes/relaxation_ttftitle/images/feather.png" alt="木遥的窗子" title="木遥的窗子" height="100"  /></a> 
+</div><div id="content">
+<div class="post">
+<!--<h1 id="post-237"><a href="http://blog.farmostwood.net/237.html" rel="bookmark" title="Permanent Link: Tech Notes: 关于feed的困惑">Tech Notes: 关于feed的困惑</a></h1>-->
+<h1 id="post-237"><a href="237.html" rel="bookmark" title="Permanent Link: Tech Notes: 关于feed的困惑"><img class="ttf" src="http://blog.farmostwood.net/wp-content/plugins/ttftitles/cache/d856250dd1187a1d41a22b1e1ed7fef4.png" alt="Tech Notes: 关于feed的困惑" width="217" height="21" /></a></h1>
+<div class="entrytext">
+<p>昨天在琢磨开始技术文章的新分类的时候，发现自己又开始因为feed的问题而纠结了。</p>
+<p>在此之前我的做法基本上和绝大多数wordpress使用者类似：用feedburner烧制自己的feed，然后用feedsmith这个插件把blog的原始feed重定向至feedburner。我在自己的blog上提供的feed地址一律是原始地址，但是事实上，google reader显示订阅到我的原始feed的读者和订阅到相应的feedburner地址的读者大约是二比一的比例。——我一直不大理解这个结果是怎么产生的。</p>
+<p>（好吧我承认我自己用google reader订阅自己的blog来着，但是这不是出于<a href="http://blog.wuxinan.net/archives/311">自恋的原因</a>，真的只是为了跟踪feed更新的情况……）</p>
+<p>上述的做法本来一直可以凑合下去，但是现在的问题是我要对子目录输出feed了，于是问题就变得很尖锐。关键是下面这几点：</p>
+<ul>
+<li>我该不该烧制这些子目录的feed？</li>
+<li>如果烧制了，我该不该把这些子目录的原始feed也重定向过去？</li>
+<li>我该在自己的网站上提供原始feed链接还是烧制后的链接？</li>
+</ul>
+<p>于是我发现我又开始经历我经历过的困惑：feedburner到底是干吗的……网络上大多数相关文章都只是照本宣科的介绍一番它的用法，就我视线所及，似乎只有<a href="http://www.williamlong.info/archives/1039.html">月光博客</a>和<a href="http://blogsdiy.org/2007-04/how-to-publish-rss-feeds/">博客学堂</a>真正细致的讨论了feed发布方式的各种选择，我尤其同意博客学堂的<a href="http://blogsdiy.org/2007-04/why-feedburner/">看法</a>，就是基本上feedburner除了能够提供一个feed订阅数统计之外几乎没有任何实质性的优点。甚至连订阅数统计对我的意义也不大，我并没有焦虑到每天察看有多少人订阅我的blog的地步，而且我也从来没有想过要在网页上放上那个显示订阅数的图标，——其实那个数字还算拿得出手，但是图标本身实在是太难看了。</p>
+<p>（题外话，难道没有一款wordpress插件可以用来统计feed的订阅数和订阅者信息么？那真的就可以彻底抛弃feedburner了。）</p>
+<p>回到子目录的问题，因为feedsmith本身不提供子目录feed的重定向，所以如果我对全站feed采用一种做法而对子目录feed采用另一种做法，整个局面就变得很混乱。最终我的做法是：还是用feedburner来烧制所有的feed，然后统一采用<a href="http://weblogtoolscollection.com/archives/2007/03/02/wp-plugin-feedburner-feed-stats/">Feedburner Feed Statistics Collector</a>这个插件来借助feedburner得到统计信息（但是不直接作重定向）。然后在网站上全部提供原始feed地址。</p>
+<p>这里其实还有个技术细节让我很糊涂：这个插件本身号称能够获取所有feed（包括评论和子目录feed）的统计，可是并没有让我输入相应的feedburner地址，那它怎么知道这些feed被烧制在什么地方呢？——不过我决定先忽略这个问题一段时间，试试看好了。</p>
+<p>其实，如果feedburner以往显示的各种订阅客户端之间的使用比例是大致正确的（我的blog是Greader : zhuaxia : xianguo = 7:1:1），我完全可以通过google reader本身的订阅统计来估算出整体的订阅情况。所以归根结底，我还是寄希望于google reader更完善的功能好了。话说在google刚收购feedburner的时候我就满怀期待，希望这两者结合能够推出什么有趣的新服务，结果这么久过去了啥也没发生，真失望。</p>
+<p class="postmetadata alt">
+<small>
+This entry was posted on Friday, July 18th, 2008 at 7:51pm 
+and is filed under <a href="http://blog.farmostwood.net/category/technology" title="View all posts in Technology" rel="category tag">Technology</a>.
+You can follow any responses to this entry through the <a href='http://blog.farmostwood.net/237.html/feed'>RSS 2.0</a> feed. 
+You can <a href="237.html#respond">leave a response</a> or <a href="237.html">trackback</a> from your own site. 
+</small>
+</p>
+</div>
+</div>
+<!-- You can start editing here. -->
+<h3 id="comments">5 Responses to &#8220;Tech Notes: 关于feed的困惑&#8221;</h3> 
+<ol class="commentlist">
+<li class="commentbody" id="comment-337">
+<a href='http://chiong.cn/' rel='external nofollow' class='url'>奇巧淫技</a><br />
+<a class="commentlink" href="237.html#comment-337" title="">July 19th, 2008 11:46</a> <div class="commentcount">1</div>
+<p>1、Feed烧录的意义除了订阅量统计之外还有A）提供一个永久的URL，中途可以切换源URL，B）对Blog内容进行永久性备份，C）诸如PodCast、广告植入等功能增强，D）支持邮件订阅和WAP订阅。<br />
+2、国人创作的Feed统计插件 <a href="http://tech.idv2.com/2007/11/12/my-feed-stats/" rel="nofollow">http://tech.idv2.com/2007/11/12/my-feed-stats/</a><br />
+3、Feedburner Feed Statistics Collector这个插件似乎是通过一个中间代理获得相关数据，没有细看。</p>
+</li>
+<li class="commentbody" id="comment-338">
+<a href='index.html' rel='external nofollow' class='url'>木遥</a><br />
+<a class="commentlink" href="237.html#comment-338" title="">July 19th, 2008 12:22</a> <div class="commentcount">2</div>
+<p>基本上那四条对我都没用。。。所以我才不喜欢feedburner。。。。</p>
+<p>但是还是非常感谢，特别是那个插件，我要试试看。</p>
+</li>
+<li class="commentbody" id="comment-2366">
+<a href='http://mgccl.com' rel='external nofollow' class='url'>Mgccl</a><br />
+<a class="commentlink" href="237.html#comment-2366" title="">February 8th, 2009 12:37</a> <div class="commentcount">3</div>
+<p>Feedburner最好的用处就是省下CPU+流量啦&#8230;<br />
+想想如果10^10人订阅你的RSS,你的服务器会瘫痪的&#8230;<br />
+但是现在不同了&#8230;Feedburner的服务器会瘫痪而不是你的&#8230;</p>
+</li>
+<li class="commentbody" id="comment-2368">
+<a href='index.html' rel='external nofollow' class='url'>木遥</a><br />
+<a class="commentlink" href="237.html#comment-2368" title="">February 8th, 2009 12:51</a> <div class="commentcount">4</div>
+<p>如果这10^10人都用google reader来订阅我的blog，难道<br />
+reader不是只读取一次我的feed然后让这些人浏览而是为10^10人分别读取么。。。<br />
+除非这10^10人全都用不一样的reader，比如大家都用自己的本地feed软件，才会有这个问题吧。。。</p>
+</li>
+<li class="commentbody" id="comment-4119">
+<a href='http://www.guizishanren.com' rel='external nofollow' class='url'>桂子山人</a><br />
+<a class="commentlink" href="237.html#comment-4119" title="">June 23rd, 2010 22:22</a> <div class="commentcount">5</div>
+<p>嗯，我也是很纠结，很想用自己的原始feed，但是又不完全舍得feedburner的统计功能。如果不用feedburner或者feedsky有没有办法可以统计RSS订阅量呢？我只需要知道总数就行，不需要特别具体的分析。</p>
+</li>
+</ol>
+<h3 id="respond">Leave a Reply</h3>
+<form action="http://blog.farmostwood.net/wp-comments-post.php" method="post" id="commentform">
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author"><small>Name (required)</small></label></p>
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+<label for="email"><small>Mail (will not be published) (required)</small></label></p>
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Website</small></label></p>
+<!--<p><small><strong>XHTML:</strong> You can use these tags: &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </small></p>-->
+<p><textarea name="comment" id="comment" cols="50" rows="10" tabindex="4"></textarea></p>
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit" />
+<input type="hidden" name="comment_post_ID" value="237" />
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="b4272b45a1" /></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_comments" id="subscribe_comments" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-label" for="subscribe_comments">Notify me of follow-up comments by email.</label></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">Notify me of new posts by email.</label></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="209"/></p></form>
+<div class="navigation">
+<div class="alignleft">&laquo; <a href="214.html">Public World, Personal Dream</a></div>
+<div class="alignright"> <a href="241.html">Tech Notes: iphone 3G, to buy or not to buy.</a> &raquo;</div>
+</div>
+</div>
+</div>
+﻿<div id="sidebar">
+<div id="noindent">
+<ul>
+
+<li>
+<h2>Search</h2>
+<form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+</div>
+</form></li>
+
+
+<li>
+<h2>About Me</h2>
+<ul>
+<li><a href="about.html">关于我。</a></li>
+<li><a href="http://imaginary.farmostwood.net">数学。</a></li>
+<li><a href="http://fiction.farmostwood.net">小说。</a></li>
+<li><a href="sitemap.html">本站目录。</a></li>
+</ul>
+</li>
+
+
+<li>
+<h2>Current Music</h2>
+<ul>
+<li><object type="application/x-shockwave-flash" data="multimedia/player.swf" width="160" height="24" id="audioplayer1"><param name="movie" value="http://blog.farmostwood.net/wp-content/plugins/audio-player/player.swf" /><param name="FlashVars" value="playerID=1&amp;bg=0xf8f8f8&amp;leftbg=0xeeeeee&amp;lefticon=0x666666&amp;rightbg=0xcccccc&amp;rightbghover=0x999999&amp;righticon=0x666666&amp;righticonhover=0xffffff&amp;text=0x666666&amp;slider=0x666666&amp;track=0xFFFFFF&amp;border=0x666666&amp;loader=0xdddddd&amp;soundFile=http%3A%2F%2Fblog.farmostwood.net%2Fmultimedia%2FSidebar%2FHace_Tuto_Guagua-Familion
+.mp3" /><param name="quality" value="high" /><param name="menu" value="false" /><param name="wmode" value="transparent"/></object></li>
+<li>Hace Tuto Guagua</li>
+<li>Performer: Familion</li>
+</ul>
+</li>
+
+<li>
+<h2>Categories</h2>
+<ul>
+	<li class="cat-item cat-item-93"><a href="http://blog.farmostwood.net/category/article" title="View all posts filed under Article">Article</a> (23)
+</li>
+	<li class="cat-item cat-item-5"><a href="http://blog.farmostwood.net/category/diary" title="View all posts filed under Diary">Diary</a> (160)
+</li>
+	<li class="cat-item cat-item-120"><a href="http://blog.farmostwood.net/category/fiction" title="View all posts filed under Fiction">Fiction</a> (5)
+</li>
+	<li class="cat-item cat-item-10"><a href="http://blog.farmostwood.net/category/movie" title="View all posts filed under Movie">Movie</a> (25)
+</li>
+	<li class="cat-item cat-item-3"><a href="http://blog.farmostwood.net/category/music" title="View all posts filed under Music">Music</a> (19)
+</li>
+	<li class="cat-item cat-item-121"><a href="http://blog.farmostwood.net/category/photo" title="View all posts filed under Photo">Photo</a> (46)
+</li>
+	<li class="cat-item cat-item-11"><a href="http://blog.farmostwood.net/category/reading" title="View all posts filed under Reading">Reading</a> (20)
+</li>
+	<li class="cat-item cat-item-118"><a href="http://blog.farmostwood.net/category/research" title="View all posts filed under Research">Research</a> (5)
+</li>
+	<li class="cat-item cat-item-110"><a href="http://blog.farmostwood.net/category/technology" title="View all posts filed under Technology">Technology</a> (29)
+</li>
+	<li class="cat-item cat-item-117"><a href="http://blog.farmostwood.net/category/travel" title="View all posts filed under Travel">Travel</a> (36)
+</li>
+</ul>
+</li>
+
+<li>
+<h2>Archive</h2>
+<ul>
+<select name=\"archive-dropdown\" onChange='document.location.href=this.options[this.selectedIndex].value;'> 
+  <option value=\"\">Select Month</option> 
+  	<option value='http://blog.farmostwood.net/date/2014/07'> July 2014 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2014/06'> June 2014 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2014/05'> May 2014 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2014/04'> April 2014 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2014/02'> February 2014 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2013/11'> November 2013 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2013/08'> August 2013 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2013/07'> July 2013 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2013/05'> May 2013 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2013/04'> April 2013 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2013/03'> March 2013 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2013/02'> February 2013 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2013/01'> January 2013 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2012/12'> December 2012 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2012/11'> November 2012 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2012/09'> September 2012 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2012/08'> August 2012 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2012/07'> July 2012 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2012/06'> June 2012 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2012/03'> March 2012 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2012/01'> January 2012 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2011/12'> December 2011 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2011/11'> November 2011 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2011/10'> October 2011 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2011/09'> September 2011 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2011/08'> August 2011 &nbsp;(10)</option>
+	<option value='http://blog.farmostwood.net/date/2011/07'> July 2011 &nbsp;(5)</option>
+	<option value='http://blog.farmostwood.net/date/2011/06'> June 2011 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2011/05'> May 2011 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2011/04'> April 2011 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2011/03'> March 2011 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2011/02'> February 2011 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2011/01'> January 2011 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2010/12'> December 2010 &nbsp;(8)</option>
+	<option value='http://blog.farmostwood.net/date/2010/11'> November 2010 &nbsp;(5)</option>
+	<option value='http://blog.farmostwood.net/date/2010/10'> October 2010 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2010/09'> September 2010 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2010/08'> August 2010 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2010/07'> July 2010 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2010/06'> June 2010 &nbsp;(6)</option>
+	<option value='http://blog.farmostwood.net/date/2010/05'> May 2010 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2010/04'> April 2010 &nbsp;(11)</option>
+	<option value='http://blog.farmostwood.net/date/2010/03'> March 2010 &nbsp;(6)</option>
+	<option value='http://blog.farmostwood.net/date/2010/02'> February 2010 &nbsp;(5)</option>
+	<option value='http://blog.farmostwood.net/date/2010/01'> January 2010 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2009/12'> December 2009 &nbsp;(7)</option>
+	<option value='http://blog.farmostwood.net/date/2009/11'> November 2009 &nbsp;(5)</option>
+	<option value='http://blog.farmostwood.net/date/2009/10'> October 2009 &nbsp;(5)</option>
+	<option value='http://blog.farmostwood.net/date/2009/09'> September 2009 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2009/08'> August 2009 &nbsp;(8)</option>
+	<option value='http://blog.farmostwood.net/date/2009/07'> July 2009 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2009/06'> June 2009 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2009/05'> May 2009 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2009/04'> April 2009 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2009/03'> March 2009 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2009/02'> February 2009 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2009/01'> January 2009 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2008/12'> December 2008 &nbsp;(5)</option>
+	<option value='http://blog.farmostwood.net/date/2008/11'> November 2008 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2008/10'> October 2008 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2008/09'> September 2008 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2008/08'> August 2008 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2008/07'> July 2008 &nbsp;(6)</option>
+	<option value='http://blog.farmostwood.net/date/2008/06'> June 2008 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2008/05'> May 2008 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2008/04'> April 2008 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2008/03'> March 2008 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2008/01'> January 2008 &nbsp;(6)</option>
+	<option value='http://blog.farmostwood.net/date/2007/11'> November 2007 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2007/10'> October 2007 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2007/09'> September 2007 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2007/08'> August 2007 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2007/07'> July 2007 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2007/06'> June 2007 &nbsp;(7)</option>
+	<option value='http://blog.farmostwood.net/date/2007/05'> May 2007 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2007/04'> April 2007 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2006/12'> December 2006 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2006/11'> November 2006 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2006/09'> September 2006 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2006/08'> August 2006 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2006/07'> July 2006 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2006/06'> June 2006 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2006/05'> May 2006 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2006/04'> April 2006 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2006/03'> March 2006 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2006/02'> February 2006 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2006/01'> January 2006 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2005/12'> December 2005 &nbsp;(2)</option>
+	<option value='http://blog.farmostwood.net/date/2005/11'> November 2005 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2005/10'> October 2005 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2005/09'> September 2005 &nbsp;(6)</option>
+	<option value='http://blog.farmostwood.net/date/2005/08'> August 2005 &nbsp;(4)</option>
+	<option value='http://blog.farmostwood.net/date/2005/07'> July 2005 &nbsp;(7)</option>
+	<option value='http://blog.farmostwood.net/date/2005/06'> June 2005 &nbsp;(9)</option>
+	<option value='http://blog.farmostwood.net/date/2005/05'> May 2005 &nbsp;(8)</option>
+	<option value='http://blog.farmostwood.net/date/2005/04'> April 2005 &nbsp;(3)</option>
+	<option value='http://blog.farmostwood.net/date/2005/03'> March 2005 &nbsp;(8)</option>
+	<option value='http://blog.farmostwood.net/date/2005/02'> February 2005 &nbsp;(6)</option>
+	<option value='http://blog.farmostwood.net/date/2005/01'> January 2005 &nbsp;(11)</option>
+	<option value='http://blog.farmostwood.net/date/2004/12'> December 2004 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2004/05'> May 2004 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2004/04'> April 2004 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2004/02'> February 2004 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2003/06'> June 2003 &nbsp;(1)</option>
+	<option value='http://blog.farmostwood.net/date/2003/05'> May 2003 &nbsp;(2)</option>
+ </select>
+</ul>
+</li>
+
+
+<!--<li>
+<h2>Twitter</h2>
+<div id="twitter_div"><ul id="twitter_update_list"></ul></div>
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/farmostwood.json?callback=twitterCallback2&count=5"></script>
+</li>-->
+
+
+
+
+<!--<li>
+<h2>Google Share</h2>
+<script type="text/javascript" src="http://www.google.com/reader/ui/publisher-en.js"></script>
+<script type="text/javascript" src="http://www.google.com/reader/public/javascript/user/14182092717333526086/state/com.google/broadcast?n=10&callback=GRC_p(%7Bc%3A%22gray%22%2Ct%3A%22My%20Shared%20Items%22%2Cs%3A%22true%22%2Cn%3A%22true%22%2Cb%3A%22false%22%7D)%3Bnew%20GRC"></script>
+</li>-->
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+<h2>Feed</h2>
+<ul>
+<a href="feed.rss" title="Entries (RSS)"><img src="http://blog.farmostwood.net/wp-content/themes/relaxation_ttftitle/images/rss.png" alt="Entries (RSS)" height="15" width="80"/></a>
+</ul>
+</li>
+
+
+
+
+<li>
+<h2>License</h2>
+<ul>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">
+<img alt="Creative Commons License" style="border-width: 0pt;" src="http://blog.farmostwood.net/wp-content/themes/relaxation_ttftitle/images/CC.png">
+</a>
+</ul>
+</li>
+
+</ul>
+</div> <!-- end of noindent -->
+</div> <!-- end of sidebar --><div id="footer">
+<p>
+<a href="feed.rss">Entries (RSS)</a>
+and <a href="comments/feed.rss">Comments (RSS)</a>.<br />
+<a href="http://wordpress.org">WordPress 3.8.3</a>. <small>54 queries in 1.673 seconds.</small>
+</p>
+</div>
+</div>
+<!-- Powered by WPtouch: 3.4.4 -->	<div style="display:none">
+	</div>
+<script type='text/javascript' src='http://blog.farmostwood.net/wp-content/plugins/akismet/_inc/form.js?ver=3.0.1'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201432'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2014Augaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://blog.farmostwood.net/wp-content/plugins/jetpack/modules/wpgroho.js?ver=3.8.3'></script>
+
+	<script src="http://stats.wp.com/e-201432.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	st_go({v:'ext',j:'1:3.1',blog:'1115230',post:'237',tz:'8'});
+	var load_cmc = function(){linktracker_init(1115230,237,2);};
+	if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+	else load_cmc();
+	</script></body>
+</html>
+<!-- Dynamic page generated in 1.662 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2014-08-04 16:41:54 -->
+
+<!-- super cache -->
