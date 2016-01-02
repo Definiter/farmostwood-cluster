@@ -44,7 +44,7 @@ class DocVector:
         for term in self.v:
             print term,
         print
-            
+
 
 def printDocMat(d):
     matrixFile = open('matrix.txt', 'w+')
@@ -67,7 +67,7 @@ def calcRSS(docVec, clusterCenter):
 
 resultFile = open('result.txt', 'w+')
 def printClusterResult(docVec):
-    clusterDoc = [] 
+    clusterDoc = []
     for i in range(clusterSum):
         clusterDoc.append([])
     for doc in docVec:
@@ -98,7 +98,7 @@ documents = docNonPhoto
 '''
 contentFile = open('content.txt', 'w+')
 for i, doc in enumerate(documents):
-    contentFile.write(str(i) + ' - ') 
+    contentFile.write(str(i) + ' - ')
     contentFile.write(doc.category)
     contentFile.write(' : ')
     contentFile.write(doc.title.encode('utf-8'))
@@ -156,7 +156,7 @@ docVec = []
 for i, document in enumerate(documents):
     termTF = {}
     for term in document.text:
-        if not term in termTF:                      
+        if not term in termTF:
             termTF[term] = 0
         termTF[term] += 1
     docVec.append(DocVector([0] * termSum))
@@ -180,7 +180,7 @@ for doc in docVec:
         keywordFile.write(', ')
     keywordFile.write('\n\n\n')
 keywordFile.close()
-    
+
 
 
 
@@ -233,7 +233,7 @@ while True:
                 maxCosDis = dis
                 closestCenter = center
         docVec[i].cluster = copy.deepcopy(closestCenter.cluster)
-        
+
     nowRSS = calcRSS(docVec, clusterCenter)
     if abs(preRSS - nowRSS) < rssThreshold:
         break
